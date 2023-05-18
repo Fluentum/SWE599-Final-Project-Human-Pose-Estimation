@@ -1,4 +1,6 @@
-SWE 599 - Human Pose Estimation
+
+## SWE 599 - Human Pose Estimation
+
 This notebook shows the results of SWE 599 - Human Pose Estimation projects final output. Aim was to analyze the pose of an office worker. Notebook outputs 3 values.
 
 Head left/right: Measures if your head is obligue towards your left or right arm.
@@ -27,35 +29,41 @@ For a smaller bracket, make those two values closer to each other.
 
 nose_to_eye_min = 0.30 nose_to_eye_max = 0.40 -> Those two values are calibrated according to the laptop, in which the project is developed. Upcoming users, may need to re-calibrate those two values. But then, users will have the chance of getting a 3D feedback from a 2D system.
 
-
-Skip Steps 1 and 2 if you already installed Python3 and Git on Windows.
+## How to install
 
 1. Install Python
-NOTE: ⚠️The version of Python that is available in the Microsoft Store is not recommended.⚠️ It may require installation of additional packages to work well with OpenVINO and the notebooks.
+Recommended Python versions are 3.7 to 3.10 - 64 bit version.
 
-Download a Python installer from python.org. Choose Python 3.7, 3.8, 3.9 or 3.10 and make sure to pick a 64 bit version. For example, this 3.8 installer: https://www.python.org/ftp/python/3.8.8/python-3.8.8-amd64.exe
-Double click on the installer to run it, and follow the steps in the installer. Check the box to add Python to your PATH, and to install py. At the end of the installer, there is an option to disable the PATH length limit. It is recommended to click this.
+For direct download, please use this link:
+https://www.python.org/downloads/
+
 2. Install Git
-Download GIT from this link
-Double click on the installer to run it, and follow the steps in the installer.
-3. Install C++ Redistributable (For Python 3.8)
-This step can be skipped for Python 3.7
 
-Download Microsoft Visual C++ Redistributable.
-Double click on the installer to run it, and follow the steps in the installer.
+For direct download, please use this link:
+https://git-scm.com/downloads
+
+3. Install C++ Redistributable (For Python 3.8, not required for Python 3.7)
+
+For direct download, please use this link:
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+
 4. Install the Notebooks
+
 After installing Python 3 and Git, run each step below using Command Prompt (cmd.exe), not PowerShell. Note: If OpenVINO is installed globally, please do not run any of these commands in a terminal where setupvars.bat is sourced.
 
-5. Create a Virtual Environment
-Note: If you already installed openvino-dev and activated the openvino_env environment, you can skip to Step 6. If you use Anaconda, please see the Conda guide.
+5. Create a Virtual Environment (if you have not installed openvino-dev)
 
-python -m venv openvino_env
+python -m venv <write_your_venv_name_to_here>
+
 6. Activate the Environment
-openvino_env\Scripts\activate
+
+<write_your_venv_name_to_here>\Scripts\activate
+
 7. Clone the Repository
 Note: Using the --depth=1 option for git clone reduces download size.
 
 git clone --depth=1 https://github.com/openvinotoolkit/openvino_notebooks.git
+
 cd openvino_notebooks
 8. Install the Packages
 This step installs OpenVINO and dependencies like Jupyter Lab. First, upgrade pip to the latest version. Then, install the required dependencies.
