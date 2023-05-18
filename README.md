@@ -62,26 +62,16 @@ python -m venv <write_your_venv_name_to_here>
 7. Clone the Repository
 Note: Using the --depth=1 option for git clone reduces download size.
 
-git clone --depth=1 https://github.com/openvinotoolkit/openvino_notebooks.git
-
+git clone --depth=1 https://github.com/Fluentum/SWE599-Final-Project-Human-Pose-Estimation.git
 cd openvino_notebooks
+
 8. Install the Packages
+9.
 This step installs OpenVINO and dependencies like Jupyter Lab. First, upgrade pip to the latest version. Then, install the required dependencies.
 
 python -m pip install --upgrade pip wheel setuptools
 pip install -r requirements.txt
-9. Launch the Notebooks!
-To launch a single notebook, like the Monodepth notebook
 
-jupyter notebook notebooks/201-vision-monodepth/201-vision-monodepth.ipynb
-To launch all notebooks in Jupyter Lab
+9. Launch the Notebook!
 
-jupyter lab notebooks
-In Jupyter Lab, select a notebook from the file browser using the left sidebar. Each notebook is located in a subdirectory within the notebooks directory.
-
-Troubleshooting
-If you have installed multiple versions of Python, use py -3.7 when creating your virtual environment to specify a supported version (in this case 3.7).
-
-If you use Anaconda, you may need to add OpenVINO to your Windows PATH. See the wiki/Conda page.
-
-If you see an error about needing to install C++, please either install Microsoft Visual C++ Redistributable or use Python 3.7, which does not have this requirement.
+jupyter notebook Human-Pose-Estimation-for-SWE599.ipynb
