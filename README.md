@@ -1,3 +1,4 @@
+![image](https://github.com/Fluentum/SWE599-Final-Project-Human-Pose-Estimation/assets/115422651/646cf384-0b8f-41de-802d-33b5d94b4d57)
 
 ## SWE 599 - Human Pose Estimation
 
